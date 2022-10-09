@@ -1,8 +1,1 @@
-function Click()
-	print("wtf")
-	print(":c")
-end
-
-script.Parent.MouseButton1Click:Connect(function()
-	Click()
-end)
+print("AChso geht das!")
