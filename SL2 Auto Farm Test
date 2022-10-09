@@ -1,0 +1,39 @@
+function Click()
+
+	if  game.Players.LocalPlayer.PlayerGui.Aua.Frame.TextLabel.Text == "Disabled" then
+		game.Players.LocalPlayer.PlayerGui.Aua.Frame.TextLabel.Text = "Enabled"
+		wait(0.1)
+		if game.Players.LocalPlayer.PlayerGui.Aua.Frame.TextLabel.Text == "Enabled" then
+			print("start")
+			wait(0.1)
+			while wait(2) do
+				local Cone = game.Workspace.SpillSystem["spill1"].CFrame
+				local Ctwo = game.Workspace.SpillSystem["spill2"].CFrame
+				local Cthree = game.Workspace.SpillSystem["spill3"].CFrame
+				local Cfour = game.Workspace.SpillSystem["spill4"].CFrame
+				local Cfive = game.Workspace.SpillSystem["spill5"].CFrame
+				local Csix = game.Workspace.SpillSystem["spill6"].CFrame
+
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (Cone)
+				wait(2)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (Ctwo)
+				wait(2)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (Cthree)
+				wait(2)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (Cfour)
+				wait(2)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (Cfive)
+				wait(2)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (Csix)
+				wait(1)
+				if game.Players.LocalPlayer.PlayerGui.Aua.Frame.TextLabel.Text == "Disabled" then
+					break
+				end
+			end
+		end
+	end
+end
+
+game.Players.LocalPlayer.PlayerGui.Aua.Frame.Farm.Start.MouseButton1Click:Connect(function()
+	Click()
+end)
