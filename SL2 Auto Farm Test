@@ -1,1 +1,8 @@
-print("AChso geht das!")
+function click()
+print("doch nicht")
+end
+
+
+script.Parent.MouseButton1Click:Connect(function()
+click()
+end)
