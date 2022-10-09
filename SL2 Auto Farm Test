@@ -1,9 +1,9 @@
 function Click()
 
-	if  game.Players.LocalPlayer.PlayerGui.Aua.Frame.TextLabel.Text == "Disabled" then
-		game.Players.LocalPlayer.PlayerGui.Aua.Frame.TextLabel.Text = "Enabled"
+	if  script.Parent.Parent.TextLabel.Text == "Disabled" then
+		script.Parent.Parent.TextLabel.Text = "Enabled"
 		wait(0.1)
-		if game.Players.LocalPlayer.PlayerGui.Aua.Frame.TextLabel.Text == "Enabled" then
+		if script.Parent.Parent.TextLabel.Text == "Enabled" then
 			print("start")
 			wait(0.1)
 			while wait(2) do
@@ -26,7 +26,7 @@ function Click()
 				wait(2)
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (Csix)
 				wait(1)
-				if game.Players.LocalPlayer.PlayerGui.Aua.Frame.TextLabel.Text == "Disabled" then
+				if script.Parent.Parent.TextLabel.Text == "Disabled" then
 					break
 				end
 			end
@@ -34,6 +34,6 @@ function Click()
 	end
 end
 
-game.Players.LocalPlayer.PlayerGui.Aua.Frame.Farm.Start.MouseButton1Click:Connect(function()
+script.Parent.MouseButton1Click:Connect(function()
 	Click()
 end)
