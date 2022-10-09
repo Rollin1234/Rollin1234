@@ -2,6 +2,6 @@ function Click()
 	print("wtf")
 end
 
-game.Players.LocalPlayer.PlayerGui.Aua.Frame.Farm.MouseButton1Click:Connect(function()
+script.Parent.MouseButton1Click:Connect(function()
 	Click()
 end)
