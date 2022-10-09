@@ -1,7 +1,1 @@
-function Click()
-	print("man was ist das JUGNE")
-end
-
-script.Parent.MouseButton1Click:Connect(function()
-	Click()
-end)
+print("Vorhin ging es noch nicht")
