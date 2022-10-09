@@ -1,5 +1,6 @@
 function Click()
 	print("wtf")
+	print(":c")
 end
 
 script.Parent.MouseButton1Click:Connect(function()
