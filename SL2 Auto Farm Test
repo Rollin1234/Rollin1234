@@ -1,8 +1,7 @@
-function click()
-print("doch nicht")
+function Click()
+	print("man was ist das JUGNE")
 end
 
-
 script.Parent.MouseButton1Click:Connect(function()
-click()
+	Click()
 end)
